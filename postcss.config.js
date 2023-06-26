@@ -3,4 +3,7 @@ module.exports = {
     tailwindcss: {},
     autoprefixer: {},
   },
+  'fontawesome-svg-core': {
+    'license': 'free'
+  }
 }
