@@ -1,27 +1,53 @@
+
 import Image from "next/image"
 import Link from "next/link"
 import SlideUp from "./SlideUp"
 import { BsGithub } from "react-icons/bs"
+import { FaLink } from "react-icons/fa6";
 
 const projects = [
     {
+        name: "Coffeeholic",
+        description:
+          "Coffeeholic is an app to track your coffee consume, blood caffeine levels and costing.",
+        image: "/coffeholic_app.png",
+        github: "https://github.com/randy-sr/coffeeholic",
+        link: "https://coffeeholic-tracker.netlify.app"
+    },
+    {
+        name: "Pokedex",
+        description:
+          "Interactive Pokedex, dome interesting pokemons information",
+        image: "/pokedex_app.png",
+        github: "https://github.com/randy-sr/pokedex",
+        link: "https://pokedex-randy.netlify.app/"
+    },
+    {
+        name: "Todo App",
+        description:
+          "Easy app for taking notes todo, done checkit and delete",
+        image: "/todo-app.png",
+        github: "https://github.com/randy-sr/todo-app-react",
+        link: "https://coolest-todo-app.netlify.app/"
+    },
+    {
         name: "TuPedido",
         description:
-          "TuPedido is an app for room service for hotels",
+          "TuPedido is an app for room service for hotels.",
         image: "/img1.PNG",
         github: "https://github.com/randy-sr/tu-pedido"
     },
     {
         name: "Budget App",
         description:
-          "Budget App calculates the budget",
+          "Budget App calculates the budget.",
         image: "/img2.PNG",
         github: "https://github.com/randy-sr/Budget-App"
     },
     {
         name: "Tip App",
         description:
-          "Make slice the tips easier",
+          "Make slice the tips easier.",
         image: "/img3.PNG",
         github: "https://github.com/randy-sr/Tips-Calculator"
     },
@@ -62,6 +88,19 @@ const ProjectSection = () => {
                                                     className="hover:-translate-y-1 transition-transform cursor-pointer"
                                                 />
                                             </Link>
+                                            {
+                                                project.link && (
+                                                    <Link
+                                                        href={project.link}
+                                                        target="_blank"
+                                                    >
+                                                        <FaLink 
+                                                            size={30}
+                                                            className="hover:-translate-y-1 transition-transform cursor-pointer"
+                                                        />
+                                                    </Link>
+                                                )
+                                            }
                                         </div>
                                     </div>
                                 </div>

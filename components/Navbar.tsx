@@ -37,14 +37,14 @@ const Navbar = () => {
             <div>
                 <div className='flex items-center justify-between py-3'>
                     <div className='md:py-3 md:block'>
-                        <h2 className='text-2xl font-bold'>Randy Sierra</h2>   
+                        <h2 className='text-2xl font-bold text-cyan-800'>Randy Sierra</h2>   
                     </div>
                     <div className='md:hidden'>
                         <button
                             onClick={() => {setNavbar(!navbar)}}
                         >
                             {/* {navbar ? <IoMdClose size={30}/> : <IoMdMenu size={30}/>} */}
-                            { navbar ? <RiCloseFill />  : <RiMenu4Line />}
+                            { navbar ? <RiCloseFill color="black" />  : <RiMenu4Line color="black"/>}
                         </button>
                     </div>
                 </div> 
